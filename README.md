@@ -1,1 +1,1 @@
-#This repo is for data sturcture and algorithms
+###This repo is for data sturcture and algorithms
