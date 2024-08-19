@@ -10,15 +10,23 @@ def merge(arr, left, mid, right):
         else:
             temp.append(arr[high])
             high += 1
-
+    
+    """
+    adding the remained elements from the left sub array to 
+    temp array
+    """
     while low <= mid:
         temp.append(arr[low])
         low += 1
-
+        
+    """
+    adding the remained elements from the right sub array to 
+    temp array
+    """
     while high <= right:
         temp.append(arr[high])
         high += 1
-
+        
     i = left
     while i <= right:
         arr[i] = temp[i - left]
